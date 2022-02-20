@@ -6,7 +6,7 @@
 /*   By: hmickey <hmickey@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/15 18:39:14 by lignigno          #+#    #+#             */
-/*   Updated: 2022/02/20 03:10:46 by hmickey          ###   ########.fr       */
+/*   Updated: 2022/02/20 05:35:23 by hmickey          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,7 +28,7 @@ static bool	get_msg(std::string &msg)
 {
 	std::getline(std::cin, msg, '\n');
 	if (msg.length() == 0)
-		msg = "{1001}";
+		msg = "empty message";
 	if (std::cin.eof())
 		return false;
 	return true;
